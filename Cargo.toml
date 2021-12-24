@@ -18,7 +18,11 @@ opt-level = 3
 members = ["./", "tools/ci"]
 
 [dependencies]
-bevy = { version = "0.5", default-features = false, features = ["dynamic"]}
+bevy = { git = "https://github.com/bevyengine/bevy/", default-features = false, features = ["dynamic"]}
+derive_more = "0.99"
+multimap = "0.8"
+strum = "0.23"
+strum_macros = "0.23"
 
 [dev-dependencies]
 criterion = "0.3"
