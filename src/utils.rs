@@ -4,7 +4,7 @@
 ///
 /// # Examples
 /// ```
-/// # use template_lib::utils::returns_true;
+/// # use leafwing_abilities::utils::returns_true;
 /// assert!(returns_true());
 /// ```
 pub fn returns_true() -> bool {
@@ -16,7 +16,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn template_unit_test() {
+    fn trivial_unit_test() {
         assert!(returns_true());
     }
 }

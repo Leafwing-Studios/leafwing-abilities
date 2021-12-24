@@ -1,10 +1,10 @@
 [package]
-name = "template"
-description = "A Bevy + mdbook enabled template repo to build on."
+name = "leafwing-abilities"
+description = "An ability and resource management library for Bevy games"
 version = "0.0.0"
 authors = ["Leafwing Studios"]
-homepage = "https://github.com/leafwing-studios/template-repo"
-repository = "https://github.com/leafwing-studios/template-repo"
+homepage = "https://leafwing-studios.com/"
+repository = "https://github.com/leafwing-studios/leafwing-abilities"
 license = "MIT + APACHE"
 edition = "2021"
 categories = ["games", "game-development"]
@@ -18,18 +18,14 @@ opt-level = 3
 members = ["./", "tools/ci"]
 
 [dependencies]
-bevy = { version = "0.5", default-features = true, features = ["dynamic"]}
+bevy = { version = "0.5", default-features = false, features = ["dynamic"]}
 
 [dev-dependencies]
 criterion = "0.3"
 
 [lib]
-name = "template_lib"
+name = "leafwing_abilities"
 path = "src/lib.rs"
-
-[[bin]]
-name = "template_bin"
-path = "src/main.rs"
 
 [[bench]]
 name = "entity_spawning"

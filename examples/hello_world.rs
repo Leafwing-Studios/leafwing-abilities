@@ -1,5 +1,5 @@
 use bevy::prelude::*;
-use template_lib::HelloWorldPlugin;
+use leafwing_abilities::HelloWorldPlugin;
 
 fn main() {
     App::build().add_plugin(HelloWorldPlugin).run();

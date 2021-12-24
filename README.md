@@ -1,33 +1,15 @@
 # About
 
-This is the Leafwing Studios' template repo, providing a quick, opinionated base for high-quality Bevy game projects (and libraries).
-We've shaved the yaks for you!
+`leafwing-abilities` is an opinionated, ready-to-use Bevy library and plugin for handling abilities.
+It features:
 
-The licenses here are provided for template purposes: this repository itself is provided under MIT-0.
-Feel free to use, hack and adopt this freely: no attribution needed.
+- cooldown tracking
+- resource management
+- a battle-tested, coherent structure for writing your own ability logic
+
+Roleplaying games, and particularly Diablo-like action RPGs are the primary target, but you may find it useful for platformers, turn-based RPGs, real-time strategy games and games looking for MOBA-style gameplay.
 
 ## Instructions
-
-### Getting started
-
-[Use this template](https://github.com/Leafwing-Studios/template-repo/generate) by pressing the big green "Use this template" button in the top right corner of [this repo](https://github.com/Leafwing-Studios/template-repo) to create a new repository.
-
-This repository has dynamic linking enabled for much faster incremental compile times.
-If you're on Windows, you'll need to use the `nightly` Rust compiler.
-Swap by using `rustup default nightly`.
-
-If you are making a game:
-
-1. Enable the features you need from Bevy in `Cargo.toml`.
-2. Delete the `examples` folder.
-3. Start writing your game. Your logic should be stored in `lib.rs` (and other files that are pulled in from it).
-Then, add all of the plugins and build your `App` in `main.rs`.
-4. If you only care about your game working on `nightly`, remove `stable` from the `toolchain` field in `.github/workflows/ci.yml`.
-
-If you are making a standalone library:
-
-1. Delete `main.rs` and the `[[bin]]` section of the top-level `Cargo.toml`.
-2. Change `default-features` to `true` for the `bevy` dependency to avoid unnecessarily pulling in extra features for your users.
 
 Finally:
 
@@ -35,13 +17,12 @@ Finally:
 2. Double check that the LICENSE matches your intent.
 3. Update this README to match your project, modifying `About`, `Getting Started` and other sections as needed.
 
-### Running your game
-
-Use `cargo run`.
-This repo is set up to always build with full optimizations, so there's no need for a `--release` flag in most cases.
-Dynamic linking is enabled to ensure build times stay snappy.
+### Running examples
 
 To run an example, use `cargo run --example_name`, where `example_name` is the file name of the example without the `.rs` extension.
+
+This repo is set up to always build with full optimizations, so there's no need for a `--release` flag in most cases.
+Dynamic linking is enabled to ensure build times stay snappy.
 
 ## Contributing
 
@@ -52,7 +33,7 @@ There are a few options if you'd like to help:
 2. Read over and discuss issues, then make a PR that fixes them. Use "Fixes #X" in your PR description to automatically close the issue when the PR is merged.
 3. Review existing PRs, and leave thoughtful feedback. If you think a PR is ready to merge, hit "Approve" in your review!
 
-Any contributions made are provided under the license(s) listed in this repo at the time of their contribution, and do not require separate attribution.
+Any contributions made are provided under the licenses (standard MIT + Apache) listed in this repo at the time of their contribution, and do not require separate attribution.
 
 ### Testing
 
